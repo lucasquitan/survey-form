@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form | freeCodeCamp</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✅</text></svg>">
+</head>
+
+<body>
+
+    <div id="container">
+        <div class="top">
+            <h1 id="title">Development Form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform</p>
+        </div>
+
+        <div class="panel">
+            <form action="" id="survey-form">
+                <div class="item">
+                    <label for="name" id="name-label">Name</label>
+                    <input type="text" id="name" placeholder="Enter with your name" required>
+
+                </div>
+                <div class="item">
+                    <label for="gender" id="gender-label">Gender</label>
+                    <div class="gender-button">
+                        <input type="radio" name="female" id="male-radio" value="male">
+                        <label>Male</label>
+                        <input type="radio" name="female" id="female-radio" value="female">
+                        <label>Female</label><br>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <label for="dropdown">How many years do you program?</label>
+                    <select id="dropdown">
+                        <option hidden selected>Select one option</option>
+                        <option value="1">I have just started to study</option>
+                        <option value="2">I program between 1 and 2 years</option>
+                        <option value="3">I program between 2 and 5 years</option>
+                        <option value="4">I program between 5 and 10 years</option>
+                        <option value="5">I program more than 10 years</option>
+                    </select>
+                </div>
+
+                <div class="item">
+                    <label for="checkbox">What are you learning/working?</label>
+                    <div class="ckb">
+                        <div class="check-item">
+                            <input type="checkbox" name="backend" id="backend" value="backend">
+                            <label for="backend">Backend</label>
+                        </div>
+
+                        <div class="check-item">
+                            <input type="checkbox" name="frontend" id="frontend" value="frontend">
+                            <label for="frontend">Frontend</label>
+                        </div>
+
+                        <div class="check-item">
+                            <input type="checkbox" name="mobile" id="mobile" value="mobile">
+                            <label for="mobile">Mobile</label>
+                        </div>
+
+                        <div class="check-item">
+                            <input type="checkbox" name="other" id="other" value="other">
+                            <label for="other">Other</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <label for="email" id="email-label">E-mail</label>
+                    <input type="email" id="email" placeholder="Enter with your e-mail" required>
+
+                    <label for="number" id="number-label">Age</label>
+                    <input type="number" id="number" min="12" max="100" placeholder="Enter with your age (optional)">
+                </div>
+
+                <label for="textarea" id="textarea-label">Please, send some aditional information</label> <br>
+                <textarea name="textarea" id="textarea" cols="30" rows="10"
+                    placeholder="Text an optional message..."></textarea>
+                <div class="submit">
+                    <button type="submit" id="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</html>
